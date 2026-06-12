@@ -1,0 +1,58 @@
+/* ==========================================
+   StarRating - Editorial Luxury
+   ========================================== */
+
+.starRating {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star {
+  color: var(--color-border);
+  cursor: default;
+  transition: color 0.15s ease;
+  display: flex;
+  align-items: center;
+}
+
+.starFilled {
+  color: var(--color-warning);
+}
+
+.starHalf {
+  position: relative;
+  color: var(--color-border);
+}
+
+.starHalfFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: var(--color-warning);
+  display: flex;
+}
+
+.interactive .star {
+  cursor: pointer;
+}
+
+.interactive .star:hover {
+  color: var(--color-warning);
+  transform: scale(1.1);
+}
+
+/* Sizes */
+.sm .star {
+  font-size: 14px;
+}
+
+.md .star {
+  font-size: 18px;
+}
+
+.lg .star {
+  font-size: 24px;
+}

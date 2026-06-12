@@ -1,0 +1,26 @@
+package com.bookstorm.dto.cart;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class CartItemResponse {
+
+    private Long id;
+    private Long bookId;
+    private String bookName;
+    private String bookSlug;
+    private String bookImage;
+    private String bookAuthor;
+    private BigDecimal price;
+    private int quantity;
+    private BigDecimal subtotal;
+    private boolean inStock;
+}

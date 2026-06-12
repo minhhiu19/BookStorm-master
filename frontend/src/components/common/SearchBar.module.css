@@ -1,0 +1,157 @@
+/* ==========================================
+   SearchBar - Editorial Luxury
+   ========================================== */
+
+.searchBarWrapper {
+  position: relative;
+}
+
+.searchTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: var(--color-text);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 50%;
+}
+
+.searchTrigger:hover {
+  color: var(--color-accent);
+}
+
+/* Expanded Search */
+.searchExpanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4000;
+  background-color: var(--color-bg-white);
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.searchInner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.searchInputWrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 14px;
+  font-size: 20px;
+  color: var(--color-text-light);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 14px 12px 44px;
+  font-size: 16px;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.searchInput:focus {
+  border-color: var(--color-accent);
+  box-shadow: none;
+}
+
+.searchInput::placeholder {
+  color: var(--color-text-light);
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: var(--color-text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.closeBtn:hover {
+  color: var(--color-text);
+}
+
+/* Suggestions */
+.suggestions {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.suggestionItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.suggestionItem:hover {
+  background-color: var(--color-border-light);
+}
+
+.suggestionIcon {
+  font-size: 16px;
+  color: var(--color-text-light);
+  flex-shrink: 0;
+}
+
+.suggestionText em {
+  font-style: normal;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(26, 26, 26, 0.3);
+  z-index: 3999;
+}
+
+@media (max-width: 576px) {
+  .searchExpanded {
+    padding: 12px 16px;
+  }
+}

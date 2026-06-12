@@ -1,0 +1,24 @@
+========================================
+  BOOKSTORM - TAI KHOAN DANG NHAP
+========================================
+
+1. Admin (Quan tri vien)
+   - Email:    admin@bookstorm.com
+   - Password: password123
+
+2. Staff (Nhan vien)
+   - Email:    staff@bookstorm.com
+   - Password: password123
+
+3. Customer (Khach hang)
+   - Email:    mai@gmail.com
+   - Password: password123
+
+========================================
+  THONG TIN TRUY CAP
+========================================
+
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:8080/api/v1
+- Swagger UI: http://localhost:8080/swagger-ui.html
+- Database: MySQL localhost:3306/bookstorm_db (root/root)

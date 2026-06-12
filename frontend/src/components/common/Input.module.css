@@ -1,0 +1,80 @@
+/* ==========================================
+   Input - Editorial Luxury
+   ========================================== */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text);
+  letter-spacing: 0.3px;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text);
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input::placeholder {
+  color: var(--color-text-light);
+}
+
+.input:focus {
+  border-color: var(--color-accent);
+  box-shadow: none;
+}
+
+.inputWithIcon {
+  padding-left: 40px;
+}
+
+.icon {
+  position: absolute;
+  left: 14px;
+  color: var(--color-text-light);
+  font-size: 18px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Error state */
+.inputError {
+  border-color: var(--color-error);
+}
+
+.inputError:focus {
+  border-color: var(--color-error);
+}
+
+.errorMessage {
+  font-size: 12px;
+  color: var(--color-error);
+  margin-top: 2px;
+}
+
+/* Textarea variant */
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}

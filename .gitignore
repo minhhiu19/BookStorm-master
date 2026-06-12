@@ -1,0 +1,146 @@
+# ==================== TỰ ĐỘNG IGNORE ====================
+
+# --- File extension bỏ qua ---
+*.txt
+*.sh
+*.md
+report
+docs
+scripts
+
+# --- Báo cáo / Slide / Đồ án (KHÔNG push lên git) ---
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.pdf
+*.xlsx
+*.xls
+~$*
+
+BaoCao_*
+Bao_Cao_*
+Bao-Cao_*
+DeCuong_*
+De_Cuong_*
+De-Cuong_*
+Slide_*
+DATN_*
+DoAn_*
+Do_An_*
+Khoa_Luan_*
+KhoaLuan_*
+ThesisReport_*
+*_BaoCao.*
+*_DeCuong.*
+*_Slide.*
+*_DATN.*
+*_DoAn.*
+*_KhoaLuan.*
+
+# --- Script Python sinh báo cáo / slide ---
+generate_baocao.py
+generate_slide.py
+generate_decuong.py
+generate_report.py
+generate_*.py
+
+# --- Ngoại lệ: giữ lại ---
+!taikhoan.txt
+
+# --- Test artifacts (Playwright) ---
+test/screenshots/
+test/test-results/
+test/playwright-report/
+
+# ==================== BACKEND (Spring Boot + Maven) ====================
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/!.mvn/wrapper/maven-wrapper.properties
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot
+*.original
+
+# ==================== FRONTEND (React JS) ====================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+frontend/.cache/
+frontend/*.local
+frontend/coverage/
+
+node_modules/
+dist/
+build/
+out/
+
+# ==================== IDE & EDITOR ====================
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+.factorypath
+
+# ==================== OS ====================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# ==================== ENVIRONMENT & SECRET ====================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+*.pem
+*.key
+credentials.json
+application-local.properties
+application-secret.properties
+
+# ==================== LOG & CACHE ====================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+.temp/
+.tmp/
+
+# ==================== TEST & COVERAGE ====================
+coverage/
+.nyc_output/
+htmlcov/
+*.lcov
+
+# ==================== DOCKER ====================
+docker-compose.override.yml
+
+# ==================== DATABASE ====================
+*.sqlite
+*.sqlite3
+*.db
